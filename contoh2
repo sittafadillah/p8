@@ -1,0 +1,47 @@
+#include <iostream>
+
+using namespace std;
+
+int Tambah (int x, int y)
+{
+    int hasil;
+    hasil=x+y;
+    return hasil;
+}
+
+int kurang (int x, int y)
+{
+    int hasil;
+    hasil=x-y;
+    return hasil;
+}
+int menuPil(){
+int menu;
+    cout<<"0. Berhenti"<<endl;
+    cout<<"1. Tambah"<<endl;
+    cout<<"2. Kurang"<<endl;
+    cout<<"Masukan pilihan:";
+    cin>>menu;
+    return menu;
+    }
+//--------------||MENU UTAMA||-------------------
+int main()
+{
+    int menu,angka1,angka2,hasil;
+
+    menu = menuPil();
+    while(menu !=0){
+        if(menu == 1){
+            cout<<"Angka 1 : ";
+            cin>>angka1;
+            cout<<"Angka 2 : ";
+            cin>>angka2;
+            hasil = Tambah(angka1,angka2);
+            cout<<"Hasil"<<angka1<<"+"<<angka2<<"="<<hasil;
+        }
+        cout<<endl;
+        menu = menuPil();
+    }
+
+
+}
