@@ -1,0 +1,30 @@
+#include <iostream>
+
+using namespace std;
+
+int Tambah (int x, int y)
+{
+    int hasil;
+    hasil=x+y;
+    cout<<endl<<"Hasil adalah"<<hasil;
+}
+
+int kurang (int x, int y)
+{
+    int hasil;
+    hasil=x-y;
+    cout<<endl<<"Hasil adalah"<<hasil;
+}
+int main()
+{
+    int bilangan1,bilangan2,hasil1,hasil2;
+    cout<<"Masukan Bilangan 1: ";
+    cin>>bilangan1;
+    cout<<"Masukan Bilangan 2: ";
+    cin>>bilangan2;
+
+    hasil1 = Tambah(bilangan1,bilangan2);
+    hasil2 = kurang(bilangan1,bilangan2);
+
+
+}
