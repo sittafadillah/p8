@@ -39,6 +39,15 @@ int main()
             hasil = Tambah(angka1,angka2);
             cout<<"Hasil"<<angka1<<"+"<<angka2<<"="<<hasil;
         }
+
+            if(menu == 2){
+            cout<<"Angka 1 : ";
+            cin>>angka1;
+            cout<<"Angka 2 : ";
+            cin>>angka2;
+            hasil = kurang(angka1,angka2);
+            cout<<"Hasil"<<angka1<<"+"<<angka2<<"="<<hasil;
+        }
         cout<<endl;
         menu = menuPil();
     }
