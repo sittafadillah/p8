@@ -1,0 +1,98 @@
+#include <iostream>
+using namespace std;
+
+float Tambah(float x, float y)
+{
+    float Hasil;
+    Hasil=x+y;
+    return Hasil;
+}
+
+float Kurang(float x, float y)
+{
+    float Hasil;
+    Hasil=x-y;
+    return Hasil;
+}
+float kali (float x, float y)
+{
+    float Hasil;
+    Hasil=x*y;
+    return Hasil;
+}
+float bagi (float x, float y)
+{
+    float Hasil;
+    Hasil=x/y;
+    return Hasil;
+}
+int mod (int x, int y)
+{
+    int Hasil;
+    Hasil=x%y;
+    return Hasil;
+}
+int PilihMenu(){
+    int menu;
+    cout<<"0. Exit"<<endl;
+    cout<<"1. Tambah"<<endl;
+    cout<<"2. Kurang"<<endl;
+    cout<<"3. Kali"<<endl;
+    cout<<"4. Bagi"<<endl;
+    cout<<"5. Mod"<<endl;
+    cout<<"Masukan Pilihan  : ";
+    cin>>menu;
+    return menu;
+}
+int main()
+{
+    int menu, angka1, angka2, hasil;
+    menu = PilihMenu();
+    while (menu !=0){
+
+        if (menu == 1){
+            cout<<"Angka 1 : ";
+            cin>>angka1;
+            cout<<"Angka 2 : ";
+            cin>>angka2;
+            hasil = Tambah(angka1, angka2);
+            cout<<"Hasil :"<<angka1<<" + "<<angka2<<" = "<<hasil;
+        }
+         if (menu == 2){
+            cout<<"Angka 1 : ";
+            cin>>angka1;
+            cout<<"Angka 2 : ";
+            cin>>angka2;
+            hasil = Kurang(angka1, angka2);
+            cout<<"Hasil :"<<angka1<<" - "<<angka2<<" = "<<hasil;
+
+         }
+         if (menu == 3){
+            cout<<"Angka 1 : ";
+            cin>>angka1;
+            cout<<"Angka 2 : ";
+            cin>>angka2;
+            hasil = kali(angka1, angka2);
+            cout<<"Hasil :"<<angka1<<" x "<<angka2<<" = "<<hasil;
+
+         }
+         if (menu == 4){
+            cout<<"Angka 1 : ";
+            cin>>angka1;
+            cout<<"Angka 2 : ";
+            cin>>angka2;
+            hasil = bagi (angka1, angka2);
+            cout<<"Hasil :"<<angka1<<" : "<<angka2<<" = "<<hasil;
+         }
+         if (menu == 5){
+            cout<<"Angka 1 : ";
+            cin>>angka1;
+            cout<<"Angka 2 : ";
+            cin>>angka2;
+            hasil = mod(angka1, angka2);
+            cout<<"Hasil :"<<angka1<<" % "<<angka2<<" = "<<hasil;
+         }
+        cout<<endl;
+        menu = PilihMenu();
+    }
+}
